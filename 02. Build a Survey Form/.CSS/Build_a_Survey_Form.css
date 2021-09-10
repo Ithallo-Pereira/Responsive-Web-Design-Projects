@@ -1,0 +1,21 @@
+body {
+  background-color: #E0FFFF; 
+  text-align: center;
+}
+#head {
+
+}
+#title {
+ color: blue;
+}
+#msg {
+  height: 50px;
+  width: 40%;
+}
+#description {
+  font-size: 120%;
+}
+.checkboxes :hover {
+  color: #1db954;
+  cursor: pointer;
+}

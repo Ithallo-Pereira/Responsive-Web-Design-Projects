@@ -1,0 +1,69 @@
+<body> 
+<header id="head"> 
+    <h1 id="title">My choices on TV</h1>
+   
+    <p id="description">Share your streaming platform preferences</p>
+</header>
+    <form id="survey-form"> 
+       <label id="name-label" for="name">Name:</label>
+           <input id="name" type="text" id="name" name="name" required                 placeholder="Enter your name"><br>
+       <label id="email-label" for="email">E-mail:<label>
+           <input id="email"  type="email" required placeholder="Enter your e-mail" id="email" name="email"> <br>
+        <label id=number-label for="number">Telefone:<label>
+          <input id="number" type="number" required placeholder="Enter your phone number" id="number" name="number" min="0" max="9">
+          
+          <!-- radio button -->
+          
+     <h2>Choose your favorite TV Streamming:</h2>
+
+   <input type="radio" id="Netflix" name="fav_stream" value="Netflix">
+  <label for="html">Netflix</label><br>
+  <input type="radio" id="Disney+" name="fav_stream" value="Disney+">
+  <label for="Disney+">Disney+</label><br>
+  <input type="radio" id="Amazonprime" name="fav_stream" value="Amazonprime">
+  <label for="Amazonprime">Amazon Prime</label><br>
+          
+           <!-- checkbox -->
+    
+    <h2>What suits you best?</h2>
+  <input class="checkboxes" type="checkbox" id="like1" name="like1" value="Movies">
+  <label for="like1"> I like movies</label><br>
+  <input class="checkboxes" type="checkbox" id="like2" name="like2" value="TVseries">
+  <label for="like2"> I like Tv Series</label><br>
+  <input class="checkboxes" type="checkbox" id="like3" name="like3" value="RealityShow">
+  <label for="like3"> I like Reality Show</label><br>
+  <input class="checkboxes" type="checkbox" id="like4" name="like4" value="documentaries">
+  <label for="like4"> I like documentaries</label>
+          
+          <!-- select box -->
+          
+   <h2>What is your favorite movie genre?</h2>
+  <input required list="dropdown">
+  <datalist id="dropdown">
+    <option value="Action">
+    <option value="Comedy">
+    <option value="Horror">
+    <option value="Drama">
+    <option value="Science fiction">
+  </datalist>
+          
+          <!-- textarea -->
+          
+          <h2>Any preferences or suggestions?</h2>
+          <label for="msg"></label>
+        <textarea id="msg" placeholder="Enter your comment here..."></textarea><br>
+          <button id="submit" type="submit">Send your message</button>
+      </form>
+          
+          <!-- Java Script -->
+          
+          <script>
+            const phoneElement = document.getElementById("number")
+console.log(phoneElement)
+            const handleChange = (event)=>{
+              console.log(phoneElement.value)
+            });
+            phoneElement.addEventListener('change', handleChange)
+            
+          </script>
+    </bod>
